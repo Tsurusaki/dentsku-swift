@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet var label:UILabel!
     @IBOutlet var label2:UILabel!
     @IBOutlet var label3:UILabel!
+    @IBOutlet var label4:UILabel!
+    
     var number:Int = 0
     var number2:Int = 0
     var number3:Int = 0
+    var number4:Int = 0
     var ope:Int = 0
     
     
@@ -140,7 +143,15 @@ class ViewController: UIViewController {
     label.text = "\(number)"
     label2.text = "\(number2)"
     label3.text = "\(number3)"
+        
     }
+    
+    @IBAction func tameru(){
+        number4 = number3
+        label4.text = "\(number4)"
+    }
+    
+    @IBAction
     
      func ikoru(){
         if(ope==1){
